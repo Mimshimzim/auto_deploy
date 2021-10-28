@@ -1,2 +1,13 @@
 ---
 # handlers file for copy_configs
+- name: "Run daemon-reload command to apply the changes"
+  command: sudo systemctl daemon-reload
+
+- name: "enable middleware service"
+  service:
+    name: middleware
+    enabled: yes
+- name:
+  service:
+    name: middleware
+    state: restarted

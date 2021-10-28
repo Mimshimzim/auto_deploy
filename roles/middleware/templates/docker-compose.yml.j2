@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  web-server-nginx:
+    image: {{ Openresty_Image_Name }}
+    network_mode: {{ Container_Network_Mode }}
+    restart: always
+    volumes: 
+      - {{ Openresty_Volume_Name }}:{{ Openresty_Log_Path }}
+    depends_on: 
+      - middleware  
+
+  middleware:
+    image: {{ Middleware_Image_Name }}
+    network_mode: {{ Container_Network_Mode }}
+    restart: always
+  
+volumes:
+  {{ Openresty_Volume_Name }}:
+          external: true

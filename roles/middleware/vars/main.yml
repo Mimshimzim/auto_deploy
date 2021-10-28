@@ -1,2 +1,9 @@
 ---
 # vars file for copy_configs
+
+Openresty_Image_Name: mohammadshirkhodaei/openresty-middleware
+Middleware_Image_Name: mohammadshirkhodaei/middleware
+Container_Network_Mode: host
+Openresty_Volume_Name: nginx_vol
+Openresty_Log_Path: /logs/nginx
+Middleware_DockerCompose_Path: /home/ubuntu
