@@ -7,7 +7,7 @@
   service:
     name: middleware
     enabled: yes
-- name:
+- name: "restart middleware service"
   service:
     name: middleware
     state: restarted

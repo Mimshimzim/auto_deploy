@@ -39,5 +39,5 @@
     mode: 0644
   notify:
    - Run daemon-reload command to apply the changes
-   - start and enable middleware service
-
+   - enable middleware service
+   - restart middleware service
