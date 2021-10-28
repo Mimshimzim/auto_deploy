@@ -4,12 +4,13 @@
 - name: "reload-daemon to apply changes"
   command: sudo systemctl daemon-reload
 
+- name: "start haproxy service"
+  service:
+    name: haproxy
+    state: started
+    
 - name: "enable haproxy service"
   service:
     name: haproxy
     enabled: yes
 
-- name: "start haproxy service"
-  service:
-    name: haproxy
-    state: started
