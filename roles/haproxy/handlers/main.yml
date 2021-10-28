@@ -1,2 +1,15 @@
 ---
 # handlers file for pull_containers
+
+- name: "reload-daemon to apply changes"
+  command: sudo systemctl daemon-reload
+
+- name: "enable haproxy service"
+  service:
+    name: haproxy
+    enabled: yes
+
+- name: "start haproxy service"
+  service:
+    name: haproxy
+    state: started

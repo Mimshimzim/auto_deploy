@@ -1,2 +1,5 @@
+
 ---
-# vars file for pull_containers
+HAProxy_Image_Name: mohammadshirkhodaei/haproxy
+Container_Network_Mode: host
+HAProxy_Container_Name: haproxy
