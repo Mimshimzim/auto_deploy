@@ -7,8 +7,8 @@
 - name: "start haproxy service"
   service:
     name: haproxy
-    state: started
-    
+    state: restarted
+
 - name: "enable haproxy service"
   service:
     name: haproxy
