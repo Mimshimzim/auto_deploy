@@ -1,6 +1,16 @@
 [all:vars]
 ansible_ssh_user=ubuntu
 
-
 [all]
-ceph-deploy
+middleware1
+middleware2
+lb1
+lb2
+
+[middleware]
+middleware1
+middleware2
+
+[loadbalancer]
+lb1
+lb2

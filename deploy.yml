@@ -4,5 +4,15 @@
   become: yes
   roles:
    - base
+     
+- hosts: middleware
+  become: yes
+  roles:
    - middleware
+
+- hosts: loadbalancer
+  become: yes
+  roles:
    - haproxy
+
+
